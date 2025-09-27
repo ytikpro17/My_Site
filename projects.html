@@ -7,41 +7,28 @@
 	<link rel="stylesheet" href="Site.css">
 </head>
 <body>
-	<header class="site-header">
-
-		<div class="container-header">
-			
-			<img src="https://сервера.укр/wp-content/uploads/2019/07/ukraine.png" class="logo">
-			<h1 class="header-title">YtikPost</h1>
-
-			<nav class="header-nav">
-
-				<a href="index.html">Головна</a>
-
-				<a href="Site gallery.html">Галерея</a>
-
-				<a href="Site info.html">Про мене</a>
-
-				<a href="">Проєкти</a>
-
-				<a href="music.html">Музика</a>
-
-				<div class="dropdown">
+<button class="menu-btn" id="menuBtn" onclick="openMenu()">☰</button> 
+<div class="sidebar" id="sidebar">
+<img src="https://сервера.укр/wp-content/uploads/2019/07/ukraine.png" class="logo">
+ <a href="index.html" onclick="closeMenu()" style="font-weight: 600;">Головна</a>
+  <a href="Site gallery.html" onclick="closeMenu()" style="font-weight: 600;">Галерея</a>
+   <a href="Site info.html" onclick="closeMenu()" style="font-weight: 600;">Про мене</a>
+   <a href="projects.html" onclick="closeMenu()" style="font-weight: 600;">Проєкти</a>
+   <a href="music.html" onclick="closeMenu()" style="font-weight: 600;">Музика</a>
+   <div class="dropdown">
 					<button class="dropbtn">Контакти</button>
-
 					<div class="dropdown-content">
-						<a href="https://t.me/like_minekraft" target="_blank" rel="noopener noreferrer">
+						<a href="https://t.me/like_minekraft" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">
 							<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram">
-
 						</a>
-						<a href="https://www.youtube.com/@Ytikpro" target="_blank" rel="noopener noreferrer">
-							<img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="Youtube">
+						<a href="https://www.youtube.com/@Ytikpro" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">
+							<img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="YouTube">
 						</a>
 					</div>
 				</div>
-			</nav>
-		</div>
-	</header>
+
+    </div> <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+     <script> function openMenu() { document.getElementById("sidebar").classList.add("active"); document.getElementById("overlay").classList.add("active"); document.getElementById("menuBtn").classList.add("hidden"); } function closeMenu() { document.getElementById("sidebar").classList.remove("active"); document.getElementById("overlay").classList.remove("active"); document.getElementById("menuBtn").classList.remove("hidden"); } </script>
 	<main>
 		<body>
 			<main>

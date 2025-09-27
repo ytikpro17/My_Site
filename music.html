@@ -7,42 +7,28 @@
 		<link rel="stylesheet" href="Site.css">
 	</head>
 	<body>
-		<header class="site-header">
-
-			<div class="container-header">
-				
-				<img src="https://сервера.укр/wp-content/uploads/2019/07/ukraine.png" class="logo">
-				<h1 class="header-title">YtikPost</h1>
-
-				<nav class="header-nav">
-
-					<a href="index.html">Головна</a>
-
-					<a href="Site gallery.html">Галерея</a>
-
-					<a href="Site info.html">Про мене</a>
-
-					<a href="projects.html">Проєкти</a>
-
-					<a href="music.html">Музика</a>
-
-					<div class="dropdown">
-						<button class="dropbtn">Контакти</button>
-
-						<div class="dropdown-content">
-							<a href="https://t.me/like_minekraft" target="_blank" rel="noopener noreferrer">
-								<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram">
-
-							</a>
-							<a href="https://www.youtube.com/@Ytikpro" target="_blank" rel="noopener noreferrer">
-								<img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="Youtube">
-							</a>
-						</div>
+		<button class="menu-btn" id="menuBtn" onclick="openMenu()">☰</button> 
+<div class="sidebar" id="sidebar">
+<img src="https://сервера.укр/wp-content/uploads/2019/07/ukraine.png" class="logo">
+ <a href="index.html" onclick="closeMenu()" style="font-weight: 600;">Головна</a>
+  <a href="Site gallery.html" onclick="closeMenu()" style="font-weight: 600;">Галерея</a>
+   <a href="Site info.html" onclick="closeMenu()" style="font-weight: 600;">Про мене</a>
+   <a href="projects.html" onclick="closeMenu()" style="font-weight: 600;">Проєкти</a>
+   <a href="music.html" onclick="closeMenu()" style="font-weight: 600;">Музика</a>
+   <div class="dropdown">
+					<button class="dropbtn">Контакти</button>
+					<div class="dropdown-content">
+						<a href="https://t.me/like_minekraft" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">
+							<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram">
+						</a>
+						<a href="https://www.youtube.com/@Ytikpro" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">
+							<img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="YouTube">
+						</a>
 					</div>
-				</nav>
-			</div>
-		</header>
-		<main>
+				</div>
+
+    </div> <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+     <script> function openMenu() { document.getElementById("sidebar").classList.add("active"); document.getElementById("overlay").classList.add("active"); document.getElementById("menuBtn").classList.add("hidden"); } function closeMenu() { document.getElementById("sidebar").classList.remove("active"); document.getElementById("overlay").classList.remove("active"); document.getElementById("menuBtn").classList.remove("hidden"); } </script>
 			<section id="main" class="home-section">
 				<div class="music">
 				<div class="item1">
@@ -69,6 +55,22 @@
 						<h3 class="item_desc">Це енергійна патріотична пісня українського гурту KOZAK SIROMAHA, випущена у 2023 році. У ній співається про свободу, віру та незламність народу в часи випробувань: "Волею напитися, ніхто не завадить нам! Битися чи молитися — кожен обирає сам". Мелодія надихає на боротьбу, з рефреном про красу рідних земель за горами, струмками та полями, де панує воля. Ідеальний гімн для підняття духу.</h3>
 						</div>
 						
+						<div class="item5">
+						<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1331947912&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+						<h2 class="item_ame">Не забудем не пробачем</h2>
+						<h3 class="item_desc">Це не просто слова — це частина національної пам’яті та емоційної стійкості. Якщо хочеш, я можу допомогти оформити цю фразу як банер, цитату для сайту або навіть як частину маніфесту.</h3>
+						</div>
+
+						<div class="item6">
+						<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1506979657&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+						<h2 class="item_ame">Погані сусіди</h2>
+						<h3 class="item_desc">Це потужна музична заява, сповнена гніву, болю та правди. Вона звертається до теми війни, зради та лицемірства, розвінчуючи міф про «братні народи», які насправді виявилися агресорами.</h3>
+						</div>
+
+						<div class="item7">
+						<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1506979657&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+						<h2 class="item_ame">Додому</h2>
+						<h3 class="item_desc">Це емоційна рефлексія про втрату та надію, що пов'язана з війною та особистими спогадами про домівки.</h3>
 				</div>
 
 
