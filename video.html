@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>YtikPost</title>
-	<link rel="stylesheet" href="Site.css">
-	<link rel="icon" href="MySite.png" type="image/x-icon">
-</head>
-<body>
-	<button class="menu-btn" id="menuBtn" onclick="openMenu()" style="background: linear-gradient(45deg, #66FF00 33%, #0070FF 66%, #FFBF00);
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.1">
+		<title>YtikPost</title>
+		<link rel="stylesheet" href="Site.css">
+		<link rel="icon" href="MySite.png" type="image/x-icon">
+	</head>
+<button class="menu-btn" id="menuBtn" onclick="openMenu()" style="background: linear-gradient(45deg, #66FF00 33%, #0070FF 66%, #FFBF00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;">☰</button> 
 <div class="sidebar" id="sidebar">
@@ -33,27 +32,15 @@
 
     </div> <div class="overlay" id="overlay" onclick="closeMenu()"></div>
      <script> function openMenu() { document.getElementById("sidebar").classList.add("active"); document.getElementById("overlay").classList.add("active"); document.getElementById("menuBtn").classList.add("hidden"); } function closeMenu() { document.getElementById("sidebar").classList.remove("active"); document.getElementById("overlay").classList.remove("active"); document.getElementById("menuBtn").classList.remove("hidden"); } </script>
-	<main>
-		<section>
-			<div  style="display: flex;
-								   flex-direction: column">
-		
-			<img src="ERt.jpg" style="width: 300px; height: 300px; border-radius: 30px;"><h1>Моя аватарка</h1>
+		<main>
+			<section id="main" class="home-section">
+				<img src="img.jpg" style="border-radius: 8px;">
+				<iframe width="1182" height="665" src="https://www.youtube.com/embed/yDsDXf-OjgU" title="Граю в Стандофф 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</section>
+		</main>
 
-			<img src="Mario.png" style="width: 300px; 
-			height: 300px; 
-			border-radius: 30px;"><h1>Фон з гри маріо</h1>
-
-		 <img src="gif.png" style="
-		width: 300px; 
-						height: 300px; 
-						border-radius: 30px;"><h1>Моя картинка</h1>
-					</div>
-		</section>
-
-	</main>
-	<footer>
-		<p>© 2025 YtikPost Original Edukation.</p>
-	</footer>
-</body>
-</html>
+		<footer>
+			<p>© 2025 YtikPost Original Edukation.</p>
+		</footer>
+	</body>
+	</html>
