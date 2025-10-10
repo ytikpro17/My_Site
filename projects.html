@@ -8,251 +8,251 @@
 	<link rel="icon" href="MySite.png" type="image/x-icon">
 </head>
 <body>
-<button class="menu-btn" id="menuBtn" onclick="openMenu()" style="background: linear-gradient(45deg, #66FF00 33%, #0070FF 66%, #FFBF00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;">☰</button> 
-<div class="sidebar" id="sidebar">
-<img src="https://сервера.укр/wp-content/uploads/2019/07/ukraine.png" class="logo">
- <a href="index.html" onclick="closeMenu()" style="font-weight: 600;">Головна</a>
-  <a href="Site gallery.html" onclick="closeMenu()" style="font-weight: 600;">Галерея</a>
-   <a href="Site info.html" onclick="closeMenu()" style="font-weight: 600;">Про мене</a>
-   <a href="projects.html" onclick="closeMenu()" style="font-weight: 600;">Проєкти</a>
-   <a href="music.html" onclick="closeMenu()" style="font-weight: 600;">Музика</a>
-   <a href="video.html" onclick="closeMenu()" style="font-weight: 600;">Відео</a>
-   <a href="clicker.html" onclick="closeMenu()" style="font-weight: 600;">Клікер монет</a>
-   <a href="shop-site.html" onclick="closeMenu()" style="font-weight: 600;">Магазин</a>
-   <div class="dropdown">
-					<button class="dropbtn">Контакти</button>
-					<div class="dropdown-content">
-						<a href="https://t.me/like_minekraft" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">
-							<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram">
-						</a>
-						<a href="https://www.youtube.com/@Ytikpro" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">
-							<img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="YouTube"></a>
-					</div>
+	<button class="menu-btn" id="menuBtn" onclick="openMenu()" style="background: linear-gradient(45deg, #66FF00 33%, #0070FF 66%, #FFBF00);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;">☰</button> 
+	<div class="sidebar" id="sidebar">
+		<img src="https://сервера.укр/wp-content/uploads/2019/07/ukraine.png" class="logo">
+		<a href="index.html" onclick="closeMenu()" style="font-weight: 600;">Головна</a>
+		<a href="Site gallery.html" onclick="closeMenu()" style="font-weight: 600;">Галерея</a>
+		<a href="Site info.html" onclick="closeMenu()" style="font-weight: 600;">Про мене</a>
+		<a href="projects.html" onclick="closeMenu()" style="font-weight: 600;">Проєкти</a>
+		<a href="music.html" onclick="closeMenu()" style="font-weight: 600;">Музика</a>
+		<a href="video.html" onclick="closeMenu()" style="font-weight: 600;">Відео</a>
+		<a href="clicker.html" onclick="closeMenu()" style="font-weight: 600;">Клікер монет</a>
+		<a href="shop-site.html" onclick="closeMenu()" style="font-weight: 600;">Магазин</a>
+		<div class="dropdown">
+			<button class="dropbtn">Контакти</button>
+			<div class="dropdown-content">
+				<a href="https://t.me/like_minekraft" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">
+					<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram">
+				</a>
+				<a href="https://www.youtube.com/@Ytikpro" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">
+					<img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="YouTube"></a>
 				</div>
-				<a href="https://t.me/ytik_helper_bot" onclick="closeMenu()" style="font-weight: 600; bottom: 0;">Тех-підтримка</a>
+			</div>
+			<a href="https://t.me/ytik_helper_bot" onclick="closeMenu()" style="font-weight: 600; bottom: 0;">Тех-підтримка</a>
 
-    </div> <div class="overlay" id="overlay" onclick="closeMenu()"></div>
-     <script> function openMenu() { document.getElementById("sidebar").classList.add("active"); document.getElementById("overlay").classList.add("active"); document.getElementById("menuBtn").classList.add("hidden"); } function closeMenu() { document.getElementById("sidebar").classList.remove("active"); document.getElementById("overlay").classList.remove("active"); document.getElementById("menuBtn").classList.remove("hidden"); } </script>
-	<main>
-		<body>
-			<main>
-				<div style="background-color: #2d2d2d;border-radius: 12px;padding: 20px;box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);max-width: 800px;margin: auto;">
+		</div> <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+		<script> function openMenu() { document.getElementById("sidebar").classList.add("active"); document.getElementById("overlay").classList.add("active"); document.getElementById("menuBtn").classList.add("hidden"); } function closeMenu() { document.getElementById("sidebar").classList.remove("active"); document.getElementById("overlay").classList.remove("active"); document.getElementById("menuBtn").classList.remove("hidden"); } </script>
+		<main>
+			<body>
+				<main>
+					<div style="background-color: #2d2d2d;border-radius: 12px;padding: 20px;box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);max-width: 800px;margin: auto;">
 
-				<h1 style="  display: flex; justify-content: center;">Гра для 2 гравців</h1>
-				<div style="color: lightgreen;">
-					<p>import pygame</p>
-					<p>import sys</p>
-					<p>import random</p>
-					<p></p>
-					<p>pygame.init()</p>
-					<p>pygame.mixer.init()</p>
-					<p>info = pygame.display.Info()</p>
-					<p>WIDTH, HEIGHT = info.current_w, info.current_h</p>
-					<p>screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN)</p>
-					<p>pygame.display.set_caption("Доганялки зі стрільбою")</p>
-					<p></p>
-					<p>WHITE = (255, 255, 255)</p>
-					<p>RED = (255, 0, 0)</p>
-					<p>BLUE = (0, 0, 255)</p>
-					<p>BLACK = (0, 0, 0)</p>
-					<p>GRAY = (200, 200, 200)</p>
-					<p>WALL_COLOR = (100, 100, 100)</p>
-					<p>PORTAL_COLOR = (0, 255, 255)</p>
-					<p></p>
-					<p>player_size = 50</p>
-					<p>speed = 5</p>
-					<p>bullet_speed = 10</p>
-					<p>portal_cooldown = 3000  # milliseconds</p>
-					<p>num_portal_pairs = 3</p>
-					<p></p>
-					<p>font = pygame.font.SysFont(None, 72)</p>
-					<p>small_font = pygame.font.SysFont(None, 36)</p>
-					<p>button_width, button_height = 300, 80</p>
-					<p>button_rect = pygame.Rect((WIDTH - button_width) // 2, (HEIGHT - button_height) // 2 + 100, button_width, button_height)</p>
-					<p></p>
-					<p>walls = [1]  # Стін більше немає — замість лабіринту буде відкритий ландшафт</p>
-					<p></p>
-					<p>def get_random_spawn():</p>
-					<p>    while True:</p>
-					<p>        x = random.randint(0, WIDTH - player_size)</p>
-					<p>        y = random.randint(0, HEIGHT - player_size)</p>
-					<p>        rect = pygame.Rect(x, y, player_size, player_size)</p>
-					<p>        return rect</p>
-					<p></p>
-					<p>player1 = get_random_spawn()</p>
-					<p>player2 = get_random_spawn()</p>
-					<p>while player1.colliderect(player2):</p>
-					<p>    player2 = get_random_spawn()</p>
-					<p></p>
-					<p>portals = [(get_random_spawn(), get_random_spawn(), 0) for _ in range(num_portal_pairs)]</p>
-					<p></p>
-					<p>clock = pygame.time.Clock()</p>
-					<p>running = True</p>
-					<p>game_over = False</p>
-					<p></p>
-					<p>bullets = []</p>
-					<p>last_dir1 = (1, 0)</p>
-					<p>last_dir2 = (-1, 0)</p>
-					<p>player1_alive = True</p>
-					<p>player2_alive = True</p>
-					<p>player1_hp = 3</p>
-					<p>player2_hp = 3</p>
-					<p></p>
-					<p>def move_player(player, dx, dy):</p>
-					<p>    new_rect = player.move(dx, dy)</p>
-					<p>    if new_rect.left < 0 or new_rect.right > WIDTH or new_rect.top < 0 or new_rect.bottom > HEIGHT:</p>
-					<p>        return player</p>
-					<p>    return new_rect</p>
-					<p></p>
-					<p>while running:</p>
-					<p>    screen.fill(WHITE)</p>
-					<p>    now = pygame.time.get_ticks()</p>
-					<p></p>
-					<p>    for event in pygame.event.get():</p>
-					<p>        if event.type == pygame.QUIT:</p>
-					<p>            running = False</p>
-					<p>        if game_over and event.type == pygame.MOUSEBUTTONDOWN:</p>
-					<p>            if button_rect.collidepoint(event.pos):</p>
-					<p>                player1 = get_random_spawn()</p>
-					<p>                player2 = get_random_spawn()</p>
-					<p>                while player1.colliderect(player2):</p>
-					<p>                    player2 = get_random_spawn()</p>
-					<p>                portals = [(get_random_spawn(), get_random_spawn(), 0) for _ in range(num_portal_pairs)]</p>
-					<p>                bullets.clear()</p>
-					<p>                game_over = False</p>
-					<p>                player1_alive = True</p>
-					<p>                player2_alive = True</p>
-					<p>        if event.type == pygame.KEYDOWN:</p>
-					<p>            if player1_alive and event.key == pygame.K_SPACE:</p>
-					<p>                bullet = pygame.Rect(player1.centerx - 5, player1.centery - 5, 10, 10)</p>
-					<p>                bullets.append((bullet, last_dir1, RED))</p>
-					<p>            if player2_alive and event.key in (pygame.K_RETURN, pygame.K_KP_ENTER):</p>
-					<p>                bullet = pygame.Rect(player2.centerx - 5, player2.centery - 5, 10, 10)</p>
-					<p>                bullets.append((bullet, last_dir2, BLUE))</p>
-					<p></p>
-					<p>    keys = pygame.key.get_pressed()</p>
-					<p>    if not game_over:</p>
-					<p>        dx1 = dy1 = 0</p>
-					<p>        dx2 = dy2 = 0</p>
-					<p></p>
-					<p>        if player1_alive:</p>
-					<p>            if keys[pygame.K_a]: dx1 = -speed</p>
-					<p>            if keys[pygame.K_d]: dx1 = speed</p>
-					<p>            if keys[pygame.K_w]: dy1 = -speed</p>
-					<p>            if keys[pygame.K_s]: dy1 = speed</p>
-					<p></p>
-					<p>        if player2_alive:</p>
-					<p>            if keys[pygame.K_LEFT]: dx2 = -speed</p>
-					<p>            if keys[pygame.K_RIGHT]: dx2 = speed</p>
-					<p>            if keys[pygame.K_UP]: dy2 = -speed</p>
-					<p>            if keys[pygame.K_DOWN]: dy2 = speed</p>
-					<p></p>
-					<p>        if dx1 or dy1: last_dir1 = (dx1 // speed, dy1 // speed)</p>
-					<p>        if dx2 or dy2: last_dir2 = (dx2 // speed, dy2 // speed)</p>
-					<p></p>
-					<p>        if player1_alive:</p>
-					<p>            player1 = move_player(player1, dx1, dy1)</p>
-					<p>        if player2_alive:</p>
-					<p>            player2 = move_player(player2, dx2, dy2)</p>
-					<p></p>
-					<p>        for i, (a, b, cooldown) in enumerate(portals):</p>
-					<p>            if now - cooldown >= portal_cooldown:</p>
-					<p>                if player1_alive and player1.colliderect(a):</p>
-					<p>                    player1.topleft = b.topleft</p>
-					<p>                    portals[i] = (a, b, now)</p>
-					<p>                elif player1_alive and player1.colliderect(b):</p>
-					<p>                    player1.topleft = a.topleft</p>
-					<p>                    portals[i] = (a, b, now)</p>
-					<p></p>
-					<p>                if player2_alive and player2.colliderect(a):</p>
-					<p>                    player2.topleft = b.topleft</p>
-					<p>                    portals[i] = (a, b, now)</p>
-					<p>                elif player2_alive and player2.colliderect(b):</p>
-					<p>                    player2.topleft = a.topleft</p>
-					<p>                    portals[i] = (a, b, now)</p>
-					<p></p>
-					<p>        if player1_alive and player2_alive and player1.colliderect(player2):</p>
-					<p>            game_over = True</p>
-					<p></p>
-					<p>    for a, b, cooldown in portals:</p>
-					<p>        pygame.draw.rect(screen, PORTAL_COLOR, a)</p>
-					<p>        pygame.draw.rect(screen, PORTAL_COLOR, b)</p>
-					<p>        time_left = max(0, portal_cooldown - (now - cooldown)) // 1000</p>
-					<p>        if time_left > 0:</p>
-					<p>            txt = small_font.render(str(time_left), True, BLACK)</p>
-					<p>            screen.blit(txt, (a.centerx - txt.get_width() // 2, a.top - 30))</p>
-					<p>            screen.blit(txt, (b.centerx - txt.get_width() // 2, b.top - 30))</p>
-					<p></p>
-					<p>    if player1_alive:</p>
-					<p>        pygame.draw.rect(screen, RED, player1)</p>
-					<p>    if player2_alive:</p>
-					<p>        pygame.draw.rect(screen, BLUE, player2)</p>
-					<p></p>
-					<p>    for bullet in bullets[:]:</p>
-					<p>        rect, direction, color = bullet</p>
-					<p>        rect.x += direction[0] * bullet_speed</p>
-					<p>        rect.y += direction[1] * bullet_speed</p>
-					<p></p>
-					<p>        for i, (a, b, cooldown) in enumerate(portals):</p>
-					<p>            if now - cooldown >= portal_cooldown:</p>
-					<p>                if rect.colliderect(a):</p>
-					<p>                    rect.topleft = b.topleft</p>
-					<p>                    portals[i] = (a, b, now)</p>
-					<p>                elif rect.colliderect(b):</p>
-					<p>                    rect.topleft = a.topleft</p>
-					<p>                    portals[i] = (a, b, now)</p>
-					<p></p>
-					<p>        if player1_alive and rect.colliderect(player1) and color == BLUE:</p>
-					<p>            player1_hp -= 1</p>
-					<p>            bullets.remove(bullet)</p>
-					<p>            if player1_hp <= 0:</p>
-						<p>                player1_alive = False</p>
-						<p>                game_over = True</p>
-						<p>        elif player2_alive and rect.colliderect(player2) and color == RED:</p>
-						<p>            player2_hp -= 1</p>
-						<p>            bullets.remove(bullet)</p>
-						<p>            if player2_hp <= 0:</p>
-							<p>                player2_alive = False</p>
-							<p>                game_over = True</p>
+						<h1 style="  display: flex; justify-content: center;">Гра для 2 гравців</h1>
+						<div style="color: lightgreen;">
+							<p>import pygame</p>
+							<p>import sys</p>
+							<p>import random</p>
 							<p></p>
-							<p>        if not screen.get_rect().contains(rect):</p>
+							<p>pygame.init()</p>
+							<p>pygame.mixer.init()</p>
+							<p>info = pygame.display.Info()</p>
+							<p>WIDTH, HEIGHT = info.current_w, info.current_h</p>
+							<p>screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN)</p>
+							<p>pygame.display.set_caption("Доганялки зі стрільбою")</p>
+							<p></p>
+							<p>WHITE = (255, 255, 255)</p>
+							<p>RED = (255, 0, 0)</p>
+							<p>BLUE = (0, 0, 255)</p>
+							<p>BLACK = (0, 0, 0)</p>
+							<p>GRAY = (200, 200, 200)</p>
+							<p>WALL_COLOR = (100, 100, 100)</p>
+							<p>PORTAL_COLOR = (0, 255, 255)</p>
+							<p></p>
+							<p>player_size = 50</p>
+							<p>speed = 5</p>
+							<p>bullet_speed = 10</p>
+							<p>portal_cooldown = 3000  # milliseconds</p>
+							<p>num_portal_pairs = 3</p>
+							<p></p>
+							<p>font = pygame.font.SysFont(None, 72)</p>
+							<p>small_font = pygame.font.SysFont(None, 36)</p>
+							<p>button_width, button_height = 300, 80</p>
+							<p>button_rect = pygame.Rect((WIDTH - button_width) // 2, (HEIGHT - button_height) // 2 + 100, button_width, button_height)</p>
+							<p></p>
+							<p>walls = [1]  # Стін більше немає — замість лабіринту буде відкритий ландшафт</p>
+							<p></p>
+							<p>def get_random_spawn():</p>
+							<p>    while True:</p>
+							<p>        x = random.randint(0, WIDTH - player_size)</p>
+							<p>        y = random.randint(0, HEIGHT - player_size)</p>
+							<p>        rect = pygame.Rect(x, y, player_size, player_size)</p>
+							<p>        return rect</p>
+							<p></p>
+							<p>player1 = get_random_spawn()</p>
+							<p>player2 = get_random_spawn()</p>
+							<p>while player1.colliderect(player2):</p>
+							<p>    player2 = get_random_spawn()</p>
+							<p></p>
+							<p>portals = [(get_random_spawn(), get_random_spawn(), 0) for _ in range(num_portal_pairs)]</p>
+							<p></p>
+							<p>clock = pygame.time.Clock()</p>
+							<p>running = True</p>
+							<p>game_over = False</p>
+							<p></p>
+							<p>bullets = []</p>
+							<p>last_dir1 = (1, 0)</p>
+							<p>last_dir2 = (-1, 0)</p>
+							<p>player1_alive = True</p>
+							<p>player2_alive = True</p>
+							<p>player1_hp = 3</p>
+							<p>player2_hp = 3</p>
+							<p></p>
+							<p>def move_player(player, dx, dy):</p>
+							<p>    new_rect = player.move(dx, dy)</p>
+							<p>    if new_rect.left < 0 or new_rect.right > WIDTH or new_rect.top < 0 or new_rect.bottom > HEIGHT:</p>
+							<p>        return player</p>
+							<p>    return new_rect</p>
+							<p></p>
+							<p>while running:</p>
+							<p>    screen.fill(WHITE)</p>
+							<p>    now = pygame.time.get_ticks()</p>
+							<p></p>
+							<p>    for event in pygame.event.get():</p>
+							<p>        if event.type == pygame.QUIT:</p>
+							<p>            running = False</p>
+							<p>        if game_over and event.type == pygame.MOUSEBUTTONDOWN:</p>
+							<p>            if button_rect.collidepoint(event.pos):</p>
+							<p>                player1 = get_random_spawn()</p>
+							<p>                player2 = get_random_spawn()</p>
+							<p>                while player1.colliderect(player2):</p>
+							<p>                    player2 = get_random_spawn()</p>
+							<p>                portals = [(get_random_spawn(), get_random_spawn(), 0) for _ in range(num_portal_pairs)]</p>
+							<p>                bullets.clear()</p>
+							<p>                game_over = False</p>
+							<p>                player1_alive = True</p>
+							<p>                player2_alive = True</p>
+							<p>        if event.type == pygame.KEYDOWN:</p>
+							<p>            if player1_alive and event.key == pygame.K_SPACE:</p>
+							<p>                bullet = pygame.Rect(player1.centerx - 5, player1.centery - 5, 10, 10)</p>
+							<p>                bullets.append((bullet, last_dir1, RED))</p>
+							<p>            if player2_alive and event.key in (pygame.K_RETURN, pygame.K_KP_ENTER):</p>
+							<p>                bullet = pygame.Rect(player2.centerx - 5, player2.centery - 5, 10, 10)</p>
+							<p>                bullets.append((bullet, last_dir2, BLUE))</p>
+							<p></p>
+							<p>    keys = pygame.key.get_pressed()</p>
+							<p>    if not game_over:</p>
+							<p>        dx1 = dy1 = 0</p>
+							<p>        dx2 = dy2 = 0</p>
+							<p></p>
+							<p>        if player1_alive:</p>
+							<p>            if keys[pygame.K_a]: dx1 = -speed</p>
+							<p>            if keys[pygame.K_d]: dx1 = speed</p>
+							<p>            if keys[pygame.K_w]: dy1 = -speed</p>
+							<p>            if keys[pygame.K_s]: dy1 = speed</p>
+							<p></p>
+							<p>        if player2_alive:</p>
+							<p>            if keys[pygame.K_LEFT]: dx2 = -speed</p>
+							<p>            if keys[pygame.K_RIGHT]: dx2 = speed</p>
+							<p>            if keys[pygame.K_UP]: dy2 = -speed</p>
+							<p>            if keys[pygame.K_DOWN]: dy2 = speed</p>
+							<p></p>
+							<p>        if dx1 or dy1: last_dir1 = (dx1 // speed, dy1 // speed)</p>
+							<p>        if dx2 or dy2: last_dir2 = (dx2 // speed, dy2 // speed)</p>
+							<p></p>
+							<p>        if player1_alive:</p>
+							<p>            player1 = move_player(player1, dx1, dy1)</p>
+							<p>        if player2_alive:</p>
+							<p>            player2 = move_player(player2, dx2, dy2)</p>
+							<p></p>
+							<p>        for i, (a, b, cooldown) in enumerate(portals):</p>
+							<p>            if now - cooldown >= portal_cooldown:</p>
+							<p>                if player1_alive and player1.colliderect(a):</p>
+							<p>                    player1.topleft = b.topleft</p>
+							<p>                    portals[i] = (a, b, now)</p>
+							<p>                elif player1_alive and player1.colliderect(b):</p>
+							<p>                    player1.topleft = a.topleft</p>
+							<p>                    portals[i] = (a, b, now)</p>
+							<p></p>
+							<p>                if player2_alive and player2.colliderect(a):</p>
+							<p>                    player2.topleft = b.topleft</p>
+							<p>                    portals[i] = (a, b, now)</p>
+							<p>                elif player2_alive and player2.colliderect(b):</p>
+							<p>                    player2.topleft = a.topleft</p>
+							<p>                    portals[i] = (a, b, now)</p>
+							<p></p>
+							<p>        if player1_alive and player2_alive and player1.colliderect(player2):</p>
+							<p>            game_over = True</p>
+							<p></p>
+							<p>    for a, b, cooldown in portals:</p>
+							<p>        pygame.draw.rect(screen, PORTAL_COLOR, a)</p>
+							<p>        pygame.draw.rect(screen, PORTAL_COLOR, b)</p>
+							<p>        time_left = max(0, portal_cooldown - (now - cooldown)) // 1000</p>
+							<p>        if time_left > 0:</p>
+							<p>            txt = small_font.render(str(time_left), True, BLACK)</p>
+							<p>            screen.blit(txt, (a.centerx - txt.get_width() // 2, a.top - 30))</p>
+							<p>            screen.blit(txt, (b.centerx - txt.get_width() // 2, b.top - 30))</p>
+							<p></p>
+							<p>    if player1_alive:</p>
+							<p>        pygame.draw.rect(screen, RED, player1)</p>
+							<p>    if player2_alive:</p>
+							<p>        pygame.draw.rect(screen, BLUE, player2)</p>
+							<p></p>
+							<p>    for bullet in bullets[:]:</p>
+							<p>        rect, direction, color = bullet</p>
+							<p>        rect.x += direction[0] * bullet_speed</p>
+							<p>        rect.y += direction[1] * bullet_speed</p>
+							<p></p>
+							<p>        for i, (a, b, cooldown) in enumerate(portals):</p>
+							<p>            if now - cooldown >= portal_cooldown:</p>
+							<p>                if rect.colliderect(a):</p>
+							<p>                    rect.topleft = b.topleft</p>
+							<p>                    portals[i] = (a, b, now)</p>
+							<p>                elif rect.colliderect(b):</p>
+							<p>                    rect.topleft = a.topleft</p>
+							<p>                    portals[i] = (a, b, now)</p>
+							<p></p>
+							<p>        if player1_alive and rect.colliderect(player1) and color == BLUE:</p>
+							<p>            player1_hp -= 1</p>
 							<p>            bullets.remove(bullet)</p>
-							<p>            continue</p>
-							<p></p>
-							<p>        else:</p>
-							<p>            pygame.draw.rect(screen, color, rect)</p>
-							<p></p>
-							<p>    if game_over:</p>
-							<p>        loser = "1" if not player1_alive else "2"</p>
-							<p>        text = font.render(f"Гравець {loser} програв! HP залишилось: {player2_hp if loser == '1' else player1_hp}", True, BLACK)</p>
-							<p>        screen.blit(text, ((WIDTH - text.get_width()) // 2, HEIGHT // 2 - 100))</p>
-							<p>        pygame.draw.rect(screen, GRAY, button_rect)</p>
-							<p>        pygame.draw.rect(screen, BLACK, button_rect, 2)</p>
-							<p>        button_text = small_font.render("Грати знову", True, BLACK)</p>
-							<p>        player1_hp = 3</p>
-							<p>        player2_hp = 3</p>
-							<p></p>
-							<p>        screen.blit(button_text, (button_rect.x + (button_width - button_text.get_width()) // 2,</p>
-							<p>                                  button_rect.y + (button_height - button_text.get_height()) // 2))</p>
-							<p>    hp_text1 = small_font.render(f"HP: {player1_hp}", True, BLACK)</p>
-							<p>    hp_text2 = small_font.render(f"HP: {player2_hp}", True, BLACK)</p>
-							<p>    screen.blit(hp_text1, (player1.x, player1.y - 25))</p>
-							<p>    screen.blit(hp_text2, (player2.x, player2.y - 25))</p>
-							<p></p>
-							<p>    pygame.display.flip()</p>
-							<p>    clock.tick(60)</p>
-							<p></p>
-							<p>pygame.quit()</p>
-							<p>sys.exit()</p>
-						</div>
-					</div>
-					</main>
+							<p>            if player1_hp <= 0:</p>
+								<p>                player1_alive = False</p>
+								<p>                game_over = True</p>
+								<p>        elif player2_alive and rect.colliderect(player2) and color == RED:</p>
+								<p>            player2_hp -= 1</p>
+								<p>            bullets.remove(bullet)</p>
+								<p>            if player2_hp <= 0:</p>
+									<p>                player2_alive = False</p>
+									<p>                game_over = True</p>
+									<p></p>
+									<p>        if not screen.get_rect().contains(rect):</p>
+									<p>            bullets.remove(bullet)</p>
+									<p>            continue</p>
+									<p></p>
+									<p>        else:</p>
+									<p>            pygame.draw.rect(screen, color, rect)</p>
+									<p></p>
+									<p>    if game_over:</p>
+									<p>        loser = "1" if not player1_alive else "2"</p>
+									<p>        text = font.render(f"Гравець {loser} програв! HP залишилось: {player2_hp if loser == '1' else player1_hp}", True, BLACK)</p>
+									<p>        screen.blit(text, ((WIDTH - text.get_width()) // 2, HEIGHT // 2 - 100))</p>
+									<p>        pygame.draw.rect(screen, GRAY, button_rect)</p>
+									<p>        pygame.draw.rect(screen, BLACK, button_rect, 2)</p>
+									<p>        button_text = small_font.render("Грати знову", True, BLACK)</p>
+									<p>        player1_hp = 3</p>
+									<p>        player2_hp = 3</p>
+									<p></p>
+									<p>        screen.blit(button_text, (button_rect.x + (button_width - button_text.get_width()) // 2,</p>
+									<p>                                  button_rect.y + (button_height - button_text.get_height()) // 2))</p>
+									<p>    hp_text1 = small_font.render(f"HP: {player1_hp}", True, BLACK)</p>
+									<p>    hp_text2 = small_font.render(f"HP: {player2_hp}", True, BLACK)</p>
+									<p>    screen.blit(hp_text1, (player1.x, player1.y - 25))</p>
+									<p>    screen.blit(hp_text2, (player2.x, player2.y - 25))</p>
+									<p></p>
+									<p>    pygame.display.flip()</p>
+									<p>    clock.tick(60)</p>
+									<p></p>
+									<p>pygame.quit()</p>
+									<p>sys.exit()</p>
+								</div>
+							</div>
+						</main>
 
-				</main>
-				<footer>
-					<p>© 2025 YtikPost Original Edukation.</p>
-				</footer>
-			</body>
-			</html>
+					</main>
+					<footer>
+						<p>© 2025 YtikPost Original Edukation.</p>
+					</footer>
+				</body>
+				</html>
