@@ -1,92 +1,122 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>YtikPost</title>
-		<link rel="stylesheet" href="Site.css">
-		<link rel="icon" href="MySite.png" type="image/x-icon">
-	</head>
-	<body>
-		<button class="menu-btn" id="menuBtn" onclick="openMenu()" style="background: linear-gradient(45deg, #66FF00 33%, #0070FF 66%, #FFBF00);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;">☰</button> 
-		<div class="sidebar" id="sidebar">
-			<img src="https://сервера.укр/wp-content/uploads/2019/07/ukraine.png" class="logo">
-			<a href="index.html" onclick="closeMenu()" style="font-weight: 600;">Головна</a>
-			<a href="Site gallery.html" onclick="closeMenu()" style="font-weight: 600;">Галерея</a>
-			<a href="Site info.html" onclick="closeMenu()" style="font-weight: 600;">Про мене</a>
-			<a href="projects.html" onclick="closeMenu()" style="font-weight: 600;">Проєкти</a>
-			<a href="music.html" onclick="closeMenu()" style="font-weight: 600;">Музика</a>
-			<a href="video.html" onclick="closeMenu()" style="font-weight: 600;">Відео</a>
-			<a href="clicker.html" onclick="closeMenu()" style="font-weight: 600;">Клікер монет</a>
-			<a href="shop-site.html" onclick="closeMenu()" style="font-weight: 600;">Магазин</a>
-			<div class="dropdown">
-				<button class="dropbtn">Контакти</button>
-				<div class="dropdown-content">
-					<a href="https://t.me/like_minekraft" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">
-						<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram">
-					</a>
-					<a href="https://www.youtube.com/@Ytikpro" target="_blank" rel="noopener noreferrer" onclick="closeMenu()">
-						<img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="YouTube">
-					</a>
-				</div>
-			</div>
-			<a href="https://t.me/ytik_helper_bot" onclick="closeMenu()" style="font-weight: 600; bottom: 0;">Тех-підтримка</a>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музика | YtikPost</title>
+    <link rel="stylesheet" href="Site.css">
+    <link rel="icon" href="MySite.png" type="image/x-icon">
+</head>
+<body>
+    <button class="menu-btn" id="menuBtn" onclick="openMenu()" style="background: linear-gradient(45deg, #66FF00 33%, #0070FF 66%, #FFBF00); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">☰</button> 
 
-		</div> <div class="overlay" id="overlay" onclick="closeMenu()"></div>
-		<script> function openMenu() { document.getElementById("sidebar").classList.add("active"); document.getElementById("overlay").classList.add("active"); document.getElementById("menuBtn").classList.add("hidden"); } function closeMenu() { document.getElementById("sidebar").classList.remove("active"); document.getElementById("overlay").classList.remove("active"); document.getElementById("menuBtn").classList.remove("hidden"); } </script>
-		<section id="main" class="home-section">
-			<div class="music">
-				<div class="item">
-					<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1633440864&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
-					<h2 class="item_ame">Вистоїмо</h2>
-					<h3 class="item_desc">Покликана достукатись до сердець людей, які розділені відстанню, і несе глибокий сенс, що, попри всі життєві випробування та зливи (метафору труднощів), Україна та українці завжди знайдуть силу подолати їх і побачити світло після темряви.</h3>
-					
-				</div>
-				<div class="item">
-					<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1318510792&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
-					<h2 class="item_ame">Чути гімн</h2>
-					<h3 class="item_desc">Може стосуватися пісні українського хіп-хоп виконавця Skofka, випущеної 29 липня 2022 року, яка містить слова про боротьбу та перемогу, а також загального поняття "гімну" — урочистої пісні, що прославляє щось або когось, як от державні символи, релігійні цінності або соціальні явища.</h3>
-				</div>
+    <div class="sidebar" id="sidebar">
+        <img src="https://сервера.укр/wp-content/uploads/2019/07/ukraine.png" class="logo" alt="Logo">
+        <a href="index.html" onclick="closeMenu()" style="font-weight: 600;">Головна</a>
+        <a href="Site gallery.html" onclick="closeMenu()" style="font-weight: 600;">Галерея</a>
+        <a href="Site info.html" onclick="closeMenu()" style="font-weight: 600;">Про мене</a>
+        <a href="projects.html" onclick="closeMenu()" style="font-weight: 600;">Проєкти</a>
+        <a href="music.html" onclick="closeMenu()" style="font-weight: 600;">Музика</a>
+        <a href="clicker.html" onclick="closeMenu()" style="font-weight: 600;">Клікер монет</a>
+        <a href="shop-site.html" onclick="closeMenu()" style="font-weight: 600;">Магазин</a>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Контакти</button>
+            <div class="dropdown-content">
+                <a href="https://t.me/like_minekraft" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram">
+                </a>
+                <a href="https://www.youtube.com/@Ytikpro" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+        <a href="https://t.me/ytik_helper_bot" onclick="closeMenu()" style="font-weight: 600;">Тех-підтримка</a>
+    </div>
 
-				<div class="item">
-					<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A338544770&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
-					<h2 class="item_ame">Ой у лузі</h2>
-					<h3 class="item_desc">Українська народна пісня, що стала гімном Українських січових стрільців, а також символом боротьби за незалежність України.</h3>
-				</div>
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
 
-				<div class="item">
-					<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1576104646&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
-					<h2 class="item_ame">За високими горами</h2>
-					<h3 class="item_desc">Це енергійна патріотична пісня українського гурту KOZAK SIROMAHA, випущена у 2023 році. У ній співається про свободу, віру та незламність народу в часи випробувань: "Волею напитися, ніхто не завадить нам! Битися чи молитися — кожен обирає сам". Мелодія надихає на боротьбу, з рефреном про красу рідних земель за горами, струмками та полями, де панує воля. Ідеальний гімн для підняття духу.</h3>
-				</div>
-				
-				<div class="item">
-					<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1331947912&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
-					<h2 class="item_ame">Не забудем не пробачем</h2>
-					<h3 class="item_desc">Це не просто слова — це частина національної пам’яті та емоційної стійкості. Якщо хочеш, я можу допомогти оформити цю фразу як банер, цитату для сайту або навіть як частину маніфесту.</h3>
-				</div>
+    <main>
+        <section id="main" class="home-section">
+            <h1 style="text-align: center; color: white;">Моя улюблена музика</h1>
+            <div class="music">
+                
+                <div class="item">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1404394276&color=%23007fff&auto_play=false&visual=true"></iframe>
+                    <div class="track-info">
+                        <a href="https://soundcloud.com/gqy62rtpxgfs" target="_blank">v_l_dos</a> · 
+                        <a href="https://soundcloud.com/gqy62rtpxgfs/kalush-x-skofka-batkvshchina-sklki-ne-strlyay-v-nash-kray" target="_blank">КALUSH x SKOFKA - Батьківщина</a>
+                    </div>
+                </div>
 
-				<div class="item">
-					<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1506979657&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
-					<h2 class="item_ame">Погані сусіди</h2>
-					<h3 class="item_desc">Це потужна музична заява, сповнена гніву, болю та правди. Вона звертається до теми війни, зради та лицемірства, розвінчуючи міф про «братні народи», які насправді виявилися агресорами.</h3>
-				</div>
+                <div class="item">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1633440864&color=%23007fff&auto_play=false&visual=true"></iframe>
+                    <div class="track-info">
+                        <a href="https://soundcloud.com/kozaksiromaha" target="_blank">KOZAK SIROMAHA</a> · 
+                        <a href="https://soundcloud.com/kozaksiromaha/vistomo" target="_blank">Вистоїмо</a>
+                    </div>
+                </div>
 
-				<div class="item">
-					<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1506979657&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
-					<h2 class="item_ame">Додому</h2>
-					<h3 class="item_desc">Це емоційна рефлексія про втрату та надію, що пов'язана з війною та особистими спогадами про домівки.</h3>
-				</div>
+                <div class="item">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1318510792&color=%23007fff&auto_play=false&visual=true"></iframe>
+                    <div class="track-info">
+                        <a href="https://soundcloud.com/ukrainemusic" target="_blank">Ukrainian Music</a> · 
+                        <a href="https://soundcloud.com/ukrainemusic/skofka-chuti-gmn-1" target="_blank">Skofka — Чути гімн</a>
+                    </div>
+                </div>
 
+                <div class="item">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/338544770&color=%23007fff&auto_play=false&visual=true"></iframe>
+                    <div class="track-info">
+                        <a href="https://soundcloud.com/ictvchannel" target="_blank">ICTV</a> · 
+                        <a href="https://soundcloud.com/ictvchannel/eefbdr0qvoix" target="_blank">Ой, у лузі червона калина</a>
+                    </div>
+                </div>
 
-			</div>
-		</section>
-	</main>
+                <div class="item">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1331947912&color=%23007fff&auto_play=false&visual=true"></iframe>
+                    <div class="track-info">
+                        <a href="https://soundcloud.com/v901ugzx0pu4" target="_blank">Captain</a> · 
+                        <a href="https://soundcloud.com/v901ugzx0pu4/skofka-ne-zabudem-ne-probachim" target="_blank">SKOFKA - Не Забудем І Не Пробачим</a>
+                    </div>
+                </div>
 
-	<footer>
-		<p>© 2025 YtikPost Original Edukation.</p>
-	</footer>
+                <div class="item">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1506979657&color=%23007fff&auto_play=false&visual=true"></iframe>
+                    <div class="track-info">
+                        <a href="https://soundcloud.com/ukr-mus" target="_blank">Українська музика</a> · 
+                        <a href="https://soundcloud.com/ukr-mus/skofka-pogan-susdi" target="_blank">Skofka — Погані сусіди</a>
+                    </div>
+                </div>
+
+                <div>
+                	<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1381640569&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/mbibdfmgvu0d" title="Lekhtse" target="_blank" style="color: #cccccc; text-decoration: none;">Lekhtse</a> · <a href="https://soundcloud.com/mbibdfmgvu0d/barabanda-mi-skoro-poyidim-v" title="Barabanda - Ми скоро поїдим в Херсон" target="_blank" style="color: #cccccc; text-decoration: none;">Barabanda - Ми скоро поїдим в Херсон</a></div>
+                </div>
+                <div class="item">
+                	<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1650783480&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/evgenij-karpenko216877783" title="Евгений Карпенко" target="_blank" style="color: #cccccc; text-decoration: none;">Евгений Карпенко</a> · <a href="https://soundcloud.com/evgenij-karpenko216877783/myusl-ua-misha-scorpion-za-terikonami" title="Мюслі UA &amp; Misha Scorpion - За териконами" target="_blank" style="color: #cccccc; text-decoration: none;">Мюслі UA &amp; Misha Scorpion - За териконами</a></div>
+                </div>
+                <div class="item"> 
+                	<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1251428866&color=%23007fff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/eh2tdbv533qs" title="Ukrainian territorial defense" target="_blank" style="color: #cccccc; text-decoration: none;">Ukrainian territorial defense</a> · <a href="https://soundcloud.com/eh2tdbv533qs/trivoga-shumei" title="Тривога | SHUMEI" target="_blank" style="color: #cccccc; text-decoration: none;">Тривога | SHUMEI</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 YtikPost Original Education.</p>
+    </footer>
+
+    <script>
+        function openMenu() {
+            document.getElementById("sidebar").classList.add("active");
+            document.getElementById("overlay").classList.add("active");
+            document.getElementById("menuBtn").classList.add("hidden");
+        }
+        function closeMenu() {
+            document.getElementById("sidebar").classList.remove("active");
+            document.getElementById("overlay").classList.remove("active");
+            document.getElementById("menuBtn").classList.remove("hidden");
+        }
+    </script>
 </body>
 </html>
